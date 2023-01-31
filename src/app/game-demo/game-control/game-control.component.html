@@ -1,0 +1,14 @@
+<div>
+    <div class="row">
+        <div class="col-5 form-group">
+            <label for="startNum">Start Number</label>
+            <input #startNum type="number" id="startNum" class="form-control">
+        </div>
+        <div class="col-5 form-group">
+            <label for="endNum">End Number</label>
+            <input #endNum type="number" id="endNum" class="form-control">
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="startGame(startNum.valueAsNumber, endNum.valueAsNumber)">Start Game</button>
+    <button class="btn btn-danger" (click)="stopGame()">Stop Game</button>
+</div>
