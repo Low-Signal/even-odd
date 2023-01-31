@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
+Languages/Framewors used: Typescript, SCSS, HTML, Angular, Bootstrap5
+
+This project was used to showcase databinding, logic, emiters, passing data between components, and displaying certain components based on variables. You enter a range of numbers for the program to count through. Even numbers display a green message, odd numbers display a red one. Both of these messages are in their respective components and displayed dynamically.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
