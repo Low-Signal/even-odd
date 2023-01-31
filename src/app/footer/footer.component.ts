@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-
+  gitLogo: string = "../assets/github-mark-white.png";
+  linkedinLogo: string = "../assets/whitelinkedin.png";
 }
