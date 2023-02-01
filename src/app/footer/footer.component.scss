@@ -1,15 +1,37 @@
+// footer {
+//     height: 5rem;
+// }
+// p {
+//     color: white;
+// }
+
+// img {
+//     color: white;
+// }
+
+// .row {
+//     margin-top: 1rem;
+    
+// }
+
 footer {
-    height: 5rem;
+    background-color: #343a40;
+    padding: 1rem;
+    position:sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
+
 p {
     color: white;
 }
 
 img {
-    color: white;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 .row {
-    margin-top: 1rem;
-    
+    column-gap: 1rem;
 }
