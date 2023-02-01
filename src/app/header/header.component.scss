@@ -1,14 +1,6 @@
 a {
     font-size: large;
     color: rgb(255, 255, 255);
-
-    .active {
-        background-color: rgb(252, 0, 0);
-        font-weight: bold !important;
-        color: rgb(255, 0, 0) !important;
-        font-size: 1.2rem !important;
-        transition-duration: 0.3s;
-    }
 }
 
 ul {
@@ -19,17 +11,6 @@ ul {
 li {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    .navbar-collapse {
-        text-align: center;
-    }
 }
 
 .navbar-nav {
@@ -48,23 +29,11 @@ li {
 
 #navbar-head {
     width: 100%;
-    position: relative;
+    position: sticky;
   }
   
   .container-fluid {
     width: 100%;
     position: relative;
   }
-
-//   h1 {
-//     display: flex;
-//   }
-
-//   #header-links {
-//     text-align: center;
-//     position: absolute;
-//     width: 95%;
-//     top: 50%;
-//     transform: translateY(-50%);
-//   }
 
