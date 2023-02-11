@@ -11,6 +11,7 @@ import { EvenComponent } from './game-demo/even/even.component';
 import { OddComponent } from './game-demo/odd/odd.component';
 import { OverviewComponent } from './overview/overview.component';
 import { FooterComponent } from './footer/footer.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     GameDemoComponent,
     OverviewComponent,
-    FooterComponent
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
