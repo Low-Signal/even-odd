@@ -1,25 +1,27 @@
 
-<div class="container">
-    <br>
-    <div class="row">
-        <div class="col">
-            <h1>Even Odd Counter!</h1>
-            <hr>
-            <p>Enter a starting number and an ending number! This program will count from the start to the end 
-                and display whether the number is odd or even!</p>
-        </div>
-        <div class="col">
-            <br>
-            <br>
-            <app-game-control #game (gameStarted)="onGameStarted($event)" (gameStopped)="onGameStopped($event)"></app-game-control>
-            <div *ngIf="curInterval != 0">
-                {{curInterval}}
+<body>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col">
+                <h1>Even Odd Counter!</h1>
+                <hr>
+                <p>Enter a starting number and an ending number! This program will count from the start to the end 
+                    and display whether the number is odd or even!</p>
             </div>
-            <ng-container *ngIf="curInterval == 0; else evenOddCheck"></ng-container>
-            <ng-template #evenOddCheck>
-                <ng-container *ngIf="curInterval % 2 == 0; else itsOdd"><app-even></app-even></ng-container>
-            </ng-template>
-            <ng-template #itsOdd><app-odd></app-odd></ng-template>
+            <div class="col">
+                <br>
+                <br>
+                <app-game-control #game (gameStarted)="onGameStarted($event)" (gameStopped)="onGameStopped($event)"></app-game-control>
+                <div *ngIf="curInterval != 0">
+                    {{curInterval}}
+                </div>
+                <ng-container *ngIf="curInterval == 0; else evenOddCheck"></ng-container>
+                <ng-template #evenOddCheck>
+                    <ng-container *ngIf="curInterval % 2 == 0; else itsOdd"><app-even></app-even></ng-container>
+                </ng-template>
+                <ng-template #itsOdd><app-odd></app-odd></ng-template>
+            </div>
         </div>
     </div>
-</div>
+</body>

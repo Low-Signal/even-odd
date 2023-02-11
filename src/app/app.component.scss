@@ -1,3 +1,10 @@
-.content-outer-container {
-    min-height: 100%;
+body {
+    height: 100vh;
+}
+
+.footer-bottom {
+    //display: flex;
+    
+    bottom: 0;
+    width: 100%
 }
