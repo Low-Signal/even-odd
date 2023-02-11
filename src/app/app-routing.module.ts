@@ -6,7 +6,7 @@ import { OverviewComponent } from './overview/overview.component';
 const routes: Routes = [
     {path: 'overview', component: OverviewComponent},
     {path: 'demo', component: GameDemoComponent},
-    {path: '', redirectTo: '/overview', pathMatch: 'full'}
+    {path: '**', component: OverviewComponent}
 ];
 
 @NgModule({
